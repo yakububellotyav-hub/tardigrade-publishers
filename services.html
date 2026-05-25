@@ -1,0 +1,266 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | TAPUB Digital World</title>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#4f46e5',
+                        secondary: '#0f172a',
+                        accent: '#f59e0b',
+                    },
+                    fontFamily: {
+                        sans: ['Inter', 'sans-serif'],
+                    }
+                }
+            }
+        }
+    </script>
+    <style>
+        @import url('https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap');
+        .glass-nav {
+            background: rgba(255, 255, 255, 0.8);
+            backdrop-filter: blur(10px);
+        }
+    </style>
+</head>
+<body class="font-sans text-slate-900 overflow-x-hidden">
+
+    <!-- Navigation -->
+    <nav class="fixed w-full z-50 glass-nav border-b border-slate-200">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-20 items-center">
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="text-2xl font-bold text-primary">TAPUB<span class="text-secondary"> Digital</span></a>
+                </div>
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-slate-600 hover:text-primary transition-colors">Home</a>
+                    <a href="about.html" class="text-slate-600 hover:text-primary transition-colors">About</a>
+                    <a href="services.html" class="text-primary font-medium border-b-2 border-primary">Services</a>
+                    <a href="portfolio.html" class="text-slate-600 hover:text-primary transition-colors">Portfolio</a>
+                    <a href="contact.html" class="text-slate-600 hover:text-primary transition-colors">Contact</a>
+                </div>
+                <div class="hidden md:block">
+                    <a href="contact.html" class="bg-primary text-white px-6 py-3 rounded-full font-medium hover:bg-opacity-90 transition-all shadow-lg hover:shadow-xl">Get Started</a>
+                </div>
+                <div class="md:hidden">
+                    <button id="mobile-menu-button" class="text-slate-600 hover:text-primary">
+                        <i class="fa-solid fa-bars text-2xl"></i>
+                    </button>
+                </div>
+            </div>
+        </div>
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-b border-slate-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Home</a>
+                <a href="about.html" class="block px-3 py-2 text-slate-600 hover:text-primary">About</a>
+                <a href="services.html" class="block px-3 py-2 text-primary font-medium">Services</a>
+                <a href="portfolio.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Portfolio</a>
+                <a href="contact.html" class="block px-3 py-2 text-slate-600 hover:text-primary">Contact</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-slate-50">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 text-center">
+            <h1 class="text-4xl md:text-5xl font-extrabold text-secondary mb-4">Our Digital Services</h1>
+            <p class="text-xl text-slate-500 max-w-3xl mx-auto">Comprehensive solutions to scale your business in the digital landscape.</p>
+        </div>
+    </section>
+
+    <!-- Services Detailed -->
+    <section class="py-24 bg-white">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="space-y-24">
+                <!-- Social Media Marketing -->
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="w-16 h-16 bg-indigo-100 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                            <i class="fa-solid fa-share-nodes"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-secondary mb-6">Social Media Marketing</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            We help you build a powerful presence on platforms like Instagram, Facebook, LinkedIn, and Twitter. Our approach focuses on creating engaging content and building meaningful connections with your target audience.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Strategy Development</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Content Creation & Curation</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Community Management</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Social Media Audits</li>
+                        </ul>
+                        <a href="contact.html" class="text-primary font-bold hover:underline">Get a Social Strategy &rarr;</a>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1611162617474-5b21e879e113?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SMM" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+
+                <!-- SEO -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="w-16 h-16 bg-indigo-100 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                            <i class="fa-solid fa-magnifying-glass"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-secondary mb-6">Search Engine Optimization</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Rank higher on search engines and attract high-quality organic traffic. We use white-hat SEO techniques to improve your visibility and drive long-term results.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Keyword Research</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> On-Page & Technical SEO</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Link Building</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Local SEO</li>
+                        </ul>
+                        <a href="contact.html" class="text-primary font-bold hover:underline">Boost Your Rankings &rarr;</a>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1571721795195-a2ca2d3370a9?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="SEO" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+
+                <!-- PPC Advertising -->
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="w-16 h-16 bg-indigo-100 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                            <i class="fa-solid fa-bullhorn"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-secondary mb-6">Pay-Per-Click Advertising</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Get immediate results with targeted advertising campaigns on Google Ads and social media. We optimize your spend to maximize ROI and conversions.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Google Search Ads</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Display Advertising</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Remarketing Campaigns</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Conversion Tracking</li>
+                        </ul>
+                        <a href="contact.html" class="text-primary font-bold hover:underline">Start Your Campaign &rarr;</a>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1460925895917-afdab827c52f?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="PPC" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+
+                <!-- Content Marketing -->
+                <div class="flex flex-col lg:flex-row-reverse items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="w-16 h-16 bg-indigo-100 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                            <i class="fa-solid fa-pen-nib"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-secondary mb-6">Content Marketing</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Engage and educate your audience with high-quality content. We create blog posts, videos, and infographics that build authority and trust for your brand.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Blog Writing</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Video Production</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Infographics & Design</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Email Newsletters</li>
+                        </ul>
+                        <a href="contact.html" class="text-primary font-bold hover:underline">Grow Your Audience &rarr;</a>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1499750310107-5fef28a66643?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Content Marketing" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+
+                <!-- Web Design -->
+                <div class="flex flex-col lg:flex-row items-center gap-12">
+                    <div class="lg:w-1/2">
+                        <div class="w-16 h-16 bg-indigo-100 text-primary rounded-2xl flex items-center justify-center mb-6 text-2xl">
+                            <i class="fa-solid fa-laptop-code"></i>
+                        </div>
+                        <h2 class="text-3xl font-bold text-secondary mb-6">Web Design</h2>
+                        <p class="text-lg text-slate-600 mb-8 leading-relaxed">
+                            Your website is your digital storefront. We design and develop responsive, high-performing websites that look great and convert visitors into customers.
+                        </p>
+                        <ul class="space-y-3 mb-8">
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Custom UI/UX Design</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Responsive Development</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> E-commerce Solutions</li>
+                            <li class="flex items-center text-slate-600"><i class="fa-solid fa-circle-check text-primary mr-3"></i> Performance Optimization</li>
+                        </ul>
+                        <a href="contact.html" class="text-primary font-bold hover:underline">Build Your Website &rarr;</a>
+                    </div>
+                    <div class="lg:w-1/2">
+                        <img src="https://images.unsplash.com/photo-1547658719-da2b51169166?ixlib=rb-4.0.3&auto=format&fit=crop&w=800&q=80" alt="Web Design" class="rounded-2xl shadow-xl">
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-secondary text-white pt-20 pb-10">
+        <div class="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="grid grid-cols-1 md:grid-cols-4 gap-12 mb-16">
+                <div class="col-span-1 md:col-span-2">
+                    <a href="index.html" class="text-3xl font-bold text-white mb-6 block">TAPUB<span class="text-primary"> Digital</span></a>
+                    <p class="text-slate-400 mb-8 max-w-md text-lg">
+                        Empowering brands to thrive in the digital landscape through creative strategies and performance-focused marketing solutions.
+                    </p>
+                    <div class="flex space-x-5">
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-xl">
+                            <i class="fa-brands fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-xl">
+                            <i class="fa-brands fa-twitter"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-xl">
+                            <i class="fa-brands fa-linkedin-in"></i>
+                        </a>
+                        <a href="#" class="w-10 h-10 bg-slate-800 rounded-full flex items-center justify-center hover:bg-primary transition-colors text-xl">
+                            <i class="fa-brands fa-instagram"></i>
+                        </a>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Quick Links</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li><a href="index.html" class="hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="about.html" class="hover:text-primary transition-colors">About Us</a></li>
+                        <li><a href="services.html" class="hover:text-primary transition-colors">Our Services</a></li>
+                        <li><a href="portfolio.html" class="hover:text-primary transition-colors">Portfolio</a></li>
+                        <li><a href="contact.html" class="hover:text-primary transition-colors">Contact</a></li>
+                    </ul>
+                </div>
+                <div>
+                    <h4 class="text-lg font-bold mb-6">Contact Us</h4>
+                    <ul class="space-y-4 text-slate-400">
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-location-dot mr-3 text-primary"></i>
+                            123 Digital Ave, Tech City
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-phone mr-3 text-primary"></i>
+                            +1 (555) 123-4567
+                        </li>
+                        <li class="flex items-center">
+                            <i class="fa-solid fa-envelope mr-3 text-primary"></i>
+                            hello@tapubdigital.com
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            <div class="border-t border-slate-800 pt-8 flex flex-col md:row justify-between items-center">
+                <p class="text-slate-500 text-sm mb-4 md:mb-0">
+                    &copy; 2026 TAPUB Digital World. All rights reserved.
+                </p>
+                <div class="flex space-x-6 text-slate-500 text-sm">
+                    <a href="#" class="hover:text-white transition-colors">Privacy Policy</a>
+                    <a href="#" class="hover:text-white transition-colors">Terms of Service</a>
+                </div>
+            </div>
+        </div>
+    </footer>
+
+    <script src="script.js" defer></script>
+</body>
+</html>
